@@ -1,0 +1,1257 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Mon May  8 15:38:25 2023
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from '../../../Makefile.param', line 281)
+COMMON_INCLUDE := -I/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/osal/include
+# automatic
+?F = $(notdir $?)
+# makefile (from '../../Makefile.param', line 111)
+AUDIO_MODULE_LIB_TYPE = AUDIO_LIB_TYPE_STATIC
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 88)
+CONFIG_OT_CHNL_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 409)
+CONFIG_OT_AVS_LUT_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 186)
+CONFIG_OT_H264E_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 290)
+CONFIG_OT_VO_CVBS = y
+# makefile (from '../../../Makefile.param', line 35)
+OT_ARCH = $(CONFIG_OT_ARCH)
+# environment
+XDG_SESSION_TYPE = x11
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 373)
+CONFIG_OT_WDG = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 331)
+CONFIG_OT_VPSS_CHN_SPREAD_SUPPORT = y
+# makefile (from '../../../Makefile.param', line 120)
+OUTPUT_PATH = $(SDK_PATH)/output
+# makefile (from '../../Makefile.param', line 26)
+SENSOR2_TYPE = OV_OS08A20_MIPI_8M_30FPS_12BIT
+# makefile (from '../../../Makefile.param', line 267)
+VER_Z = 0
+# makefile (from 'Makefile', line 11)
+TARGET := sample_ive_main
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 329)
+CONFIG_OT_VPSS_MCF_SUPPORT = y
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 391)
+CONFIG_OT_GFBG_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 292)
+CONFIG_OT_VO_RGB = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 252)
+CONFIG_OT_VI_PIPE_LOW_DELAY = y
+# makefile (from '../../../Makefile.param', line 115)
+MPP_PATH = $(PARAM_DIR)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 255)
+CONFIG_OT_VI_PIPE_USER_PIC = y
+# makefile (from '../../Makefile.param', line 163)
+MEDIA_MSG_SERVER_SRC := 
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 305)
+CONFIG_OT_VO_FB_SEPARATE = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 437)
+CONFIG_OT_SVP_IVE = y
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=fcitx
+# makefile
+CURDIR := /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive
+# makefile (from '../../Makefile.param', line 96)
+INNER_HDMI = y
+# makefile
+SHELL = /bin/sh
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 162)
+CONFIG_OT_H265D_SUPPORT = y
+# makefile (from '../../../Makefile.param', line 116)
+DRV_ROOT = $(SDK_PATH)/interdrv
+# environment
+VTE_VERSION = 5202
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 80)
+CONFIG_OT_VB_EXTPOOL_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 42)
+CONFIG_USER_AARCH64_MIX210 = y
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 70)
+CONFIG_OT_TALKVQEV2_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 277)
+CONFIG_OT_VO_VPSS_AUTO = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 44)
+CONFIG_USER_BIT = USER_BIT_64
+# environment
+_ = /usr/bin/make
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../smp_linux.mak', line 5)
+CFLAGS = -Wall -g $(INC_FLAGS) -D$(OT_ARCH) -D$(OT_FPGA) -lpthread -lm -ldl -D$(ISP_VERSION) -lstdc++ $(LIBS_CFLAGS) $(LIBS_EXEC_CFLAGS) $(MPP_CFLAGS) -DSENSOR0_TYPE=$(SENSOR0_TYPE) -DSENSOR1_TYPE=$(SENSOR1_TYPE) -DSENSOR2_TYPE=$(SENSOR2_TYPE) -DSENSOR3_TYPE=$(SENSOR3_TYPE) -DOT_ACODEC_TYPE_HDMI -DOT_ACODEC_TYPE_INNER -DOT_VQE_USE_STATIC_MODULE_REGISTER -DOT_AAC_USE_STATIC_MODULE_REGISTER -DOT_AAC_HAVE_SBR_LIB -I$(PWD)/../common -fstack-protector-strong -I$(PWD)/sample -I/home/ginger/SDL2-2.26.1/install/include/SDL2 -I/home/ginger/SDL2_ttf-2.0.18/install/include/SDL2/ -L/home/ginger/SDL2-2.26.1/install/lib -L/home/ginger/SDL2_ttf-2.0.18/install/lib -lSDL2 -lSDL2_ttf -lpthread -Wl,--rpath-link=/home/ginger/freetype-2.9/install/lib $(COMM_INC)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 193)
+CONFIG_OT_JPEGE_MPF_DCF_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 371)
+CONFIG_OT_IR = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 198)
+CONFIG_OT_VENC_FRAMEBUF_RECYCLE_SUPPORT = y
+# makefile (from '../../../Makefile.param', line 259)
+LIBS_EXEC_CFLAGS :=  -fPIE -pie -s
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../Makefile.linux.param', line 23)
+OSDRV_PATH := /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/../../open_source/linux/linux-4.19.y/../../..
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 276)
+CONFIG_OT_VO_HD = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 188)
+CONFIG_OT_H264E_USERDATA_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 293)
+CONFIG_OT_VO_BT1120 = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 175)
+CONFIG_VDEC_LOWDELAY_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 27)
+CONFIG_CPU_TYPE = a55
+# makefile (from '../../../Makefile.param', line 268)
+VER_P = 0
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../smp_linux.mak', line 1)
+ 
+MAKEFILE_LIST :=  Makefile ../Makefile.param ../../../Makefile.param /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../Makefile.linux.param ../../Makefile.param /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../smp_linux.mak
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 318)
+CONFIG_OT_VPSS_BACKUP_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../Makefile.linux.param', line 36)
+REL_INI := /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/init
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 14)
+CONFIG_OT_ARCH = ss928v100
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 311)
+CONFIG_OT_VPSS_ONLINE_SUPPORT = y
+# automatic
+@F = $(notdir $@)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 207)
+CONFIG_OT_VENC_SKIPREF_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 369)
+CONFIG_MIPI_TX = y
+# makefile (from '../../Makefile.param', line 164)
+MEDIA_MSG_SERVER_OBJ := 
+# environment
+IM_CONFIG_PHASE = 2
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 202)
+CONFIG_OT_VENC_SMARTP_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 65)
+CONFIG_OT_ACODEC_GAIN_STEP = 3
+# environment
+USERNAME = ginger
+# makefile (from '../../../Makefile.param', line 38)
+ARM_ARCH = $(CONFIG_ARM_ARCH_TYPE)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 94)
+CONFIG_OT_DIS_SUBMIT_TO_VGS_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 248)
+CONFIG_OT_VI_PIPE_DUMP_PRIVATE_DATA = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 316)
+CONFIG_OT_VPSS_3DNR_DELAY_MODE_SUPPORT = y
+# environment
+MAKELEVEL := 0
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 37)
+CONFIG_KERNEL_VERSION = linux-4.19.y
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 285)
+CONFIG_OT_VO_BATCH = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 45)
+CONFIG_LINUX_STYLE = y
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 323)
+CONFIG_OT_VPSS_VGS_GRP_SUPPORT = y
+# makefile (from '../../Makefile.param', line 24)
+SENSOR1_TYPE = OV_OS08A20_MIPI_8M_30FPS_12BIT
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 47)
+CONFIG_CODE_SYTLE = USE_LINUX_STYLE
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 344)
+CONFIG_OT_VPP_BNR_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 240)
+CONFIG_OT_VI_DEV_BAS = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 404)
+CONFIG_OT_PCIV_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 41)
+CONFIG_KERNEL_BIT = KERNEL_BIT_64
+# makefile (from '../../../Makefile.param', line 146)
+OPEN_SOURCE_PATH = $(SDK_PATH)/../../open_source
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 278)
+CONFIG_OT_VO_PLAY_CTL = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 247)
+CONFIG_OT_VI_PIPE_DUMP_FRAME = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../smp_linux.mak', line 3)
+OBJS := sample_ive_main.o ./sample/sample_ive_md.o ./sample/sample_ive_st_and_lk.o ./sample/sample_ive_canny.o ./sample/sample_ive_sobel_with_cached_mem.o ./sample/sample_ive_gmm2.o ./sample/sample_ive_test_memory.o ./sample/sample_ive_persptrans.o ./sample/sample_ive_od.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../common/sample_common_svp.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../common/sample_common_ive.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../common/sample_common_mau.o
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 440)
+CONFIG_OT_SVP_IVE_NCC = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 144)
+CONFIG_OT_SYS_SCALE_COEF_ONLINE_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 174)
+CONFIG_VDEC_USERDATA_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 104)
+CONFIG_OT_GDC_LDC_SUPPORT = y
+# environment
+CLUTTER_IM_MODULE = xim
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 166)
+CONFIG_OT_DEC_SHVC_SUPPORT = y
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+ 
+# makefile (from '../../../Makefile.param', line 47)
+ARCH_LIBNAME = $(CONFIG_OT_SUBARCH)
+# environment
+LC_NAME = zh_CN.UTF-8
+# environment
+VSCODE_CWD = /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 383)
+CONFIG_OT_SECURITY_SUBSYS_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../Makefile.linux.param', line 4)
+CVER = .C$(ASIC_FLAG)2
+# makefile (from '../../Makefile.param', line 161)
+MEDIA_MSG_CLIENT_OBJ := 
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 48)
+CONFIG_RELEASE_TYPE_RELEASE = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../Makefile.linux.param', line 41)
+DRV_CFLAGS := -Wall -fsigned-char -Wno-date-time
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 222)
+CONFIG_OT_VGS_STITCH_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 192)
+CONFIG_OT_MJPEGE_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 250)
+CONFIG_OT_VI_PIPE_SEND_FRAME = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 384)
+CONFIG_OT_CIPHER_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 34)
+CONFIG_PHYS_ADDR_BIT_WIDTH_64 = y
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 200)
+CONFIG_OT_VENC_SVC_SUPPORT = y
+# environment
+PATH = /home/ginger/bin:/home/ginger/sdk/cc-riscv32-cfg5-musl-20211008-elf/cc-riscv32-cfg5-musl-20211008-elf/bin:/home/ginger/.local/bin:/usr/local/ffmpeg/bin:/opt/hisi-linux/x86-arm/arm-himix100-linux/bin:/home/ginger/sdk/hcc_riscv32/bin:/opt/linux/x86-arm/aarch64-mix210-linux/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 317)
+CONFIG_OT_VPSS_AUTO_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 414)
+CONFIG_OT_AVS_CONVERT_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 445)
+CONFIG_OT_SVP_IVE_PERSP_TRANS = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 105)
+CONFIG_OT_GDC_LDC_V3_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 386)
+CONFIG_OT_KLAD_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 33)
+CONFIG_OS_TYPE = linux
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 270)
+CONFIG_OT_VI_PTS = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 251)
+CONFIG_OT_VI_PIPE_INTERRUPT_EN = y
+# makefile (from '../../../Makefile.param', line 203)
+AUDIO_LIBS = $(REL_LIB)/libot_voice_engine.so $(REL_LIB)/libot_upvqe.so $(REL_LIB)/libot_dnvqe.so $(REL_LIB)/libaac_comm.so $(REL_LIB)/libaac_enc.so $(REL_LIB)/libaac_dec.so
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../Makefile.linux.param', line 39)
+LIBS_LD_CFLAGS := -fno-common -mcpu=cortex-a53 -fno-aggressive-loop-optimizations -Wl,-z,relro -Wl,-z,noexecstack -Wl,-z,now,-s -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -ldl -rdynamic
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 211)
+CONFIG_OT_RC_AVBR_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 173)
+CONFIG_VDEC_USERPIC_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 452)
+CONFIG_OT_SVP_NPU_V2R1 = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 71)
+CONFIG_OT_TALKVQEV2_WNR_SUPPORT = y
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# makefile (from '../../../Makefile.param', line 79)
+FPGA = $(CONFIG_OT_FPGA)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 328)
+CONFIG_OT_VPSS_CHN_CROP_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 322)
+CONFIG_OT_VPSS_2SCALE_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 480)
+CONFIG_OT_LOG_TRACE_ALL = y
+# environment
+SESSION_MANAGER = local/ginger-VirtualBox:@/tmp/.ICE-unix/1564,unix/ginger-VirtualBox:/tmp/.ICE-unix/1564
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 205)
+CONFIG_OT_VENC_RCNREF_SHARE_SUPPORT = y
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 442)
+CONFIG_OT_SVP_IVE_NORM_GRAD = y
+# environment
+TEXTDOMAIN = im-config
+# makefile (from '../../Makefile.param', line 27)
+SENSOR3_TYPE = OV_OS08A20_MIPI_8M_30FPS_12BIT
+# makefile (from 'Makefile', line 13)
+TARGET_PATH := /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive
+ 
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 134)
+CONFIG_OT_RGN_CORNER_RECT_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 121)
+CONFIG_OT_ISP_CA_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../Makefile.linux.param', line 21)
+KERNEL_ROOT = $(OPEN_SOURCE_PATH)/linux/$(KERNEL_NAME)
+# makefile (from '../../../Makefile.param', line 36)
+OT_SUBARCH = $(CONFIG_OT_SUBARCH)
+# makefile (from '../../../Makefile.param', line 119)
+TEMP_PATH = $(SDK_PATH)/temp
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 367)
+CONFIG_INTERDRV = y
+# makefile (from '../../Makefile.param', line 23)
+SENSOR0_TYPE = SC850SL_8M30
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../Makefile.linux.param', line 34)
+REL_KO := /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/ko
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 330)
+CONFIG_OT_VPSS_CHN_LDC_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 227)
+CONFIG_OT_VGS_LOW_DELAY_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 249)
+CONFIG_OT_VI_PIPE_BAS = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 337)
+CONFIG_OT_AVS_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 151)
+CONFIG_OT_TDE_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 450)
+CONFIG_OT_SVP_NPU_V1R1 = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 268)
+CONFIG_OT_VI_EXT_CHN = y
+# environment
+XDG_MENU_PREFIX = gnome-
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 67)
+CONFIG_OT_DOWNVQE_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 215)
+CONFIG_OT_VENC_COMPOSITE_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 312)
+CONFIG_OT_VPSS_SLAVE_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 145)
+CONFIG_OT_SYS_SMMU_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 142)
+CONFIG_OT_SYS_SUPPORT = y
+# environment
+LC_NUMERIC = zh_CN.UTF-8
+# makefile (from '../../Makefile.param', line 160)
+MEDIA_MSG_CLIENT_SRC := 
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 161)
+CONFIG_OT_VDEC_SUPPORT = y
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 356)
+CONFIG_OT_UVC_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 424)
+CONFIG_OT_SNAP_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 221)
+CONFIG_OT_VGS_SUPPORT = y
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# makefile (from 'Makefile', line 9)
+SMP_SRCS := sample_ive_main.c ./sample/sample_ive_md.c ./sample/sample_ive_st_and_lk.c ./sample/sample_ive_canny.c ./sample/sample_ive_sobel_with_cached_mem.c ./sample/sample_ive_gmm2.c ./sample/sample_ive_test_memory.c ./sample/sample_ive_persptrans.c ./sample/sample_ive_od.c /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../common/sample_common_svp.c /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../common/sample_common_ive.c /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../common/sample_common_mau.c
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 319)
+CONFIG_OT_VPSS_COVER_SUPPORT = y
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 171)
+CONFIG_VDEC_ROTATION_SUPPORT = y
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 228)
+ 
+CONFIG_OT_VGS_FPD_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 18)
+CONFIG_OT_SUBCHIP_TYPE = 0x01090100
+# automatic
+%F = $(notdir $%)
+# makefile (from '../../../Makefile.param', line 107)
+OT_FPGA := OT_XXXX
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 31)
+CONFIG_LINUX_OS = y
+# environment
+DISPLAY = :0
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 223)
+CONFIG_OT_VGS_LUMA_STAT_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 288)
+CONFIG_OT_VO_LOW_DELAY = y
+# makefile (from '../../../Makefile.param', line 269)
+VER_B = 10
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 206)
+CONFIG_OT_VENC_DEBREATH_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 439)
+CONFIG_OT_SVP_IVE_FILTER_AND_CSC = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 244)
+CONFIG_OT_VI_VIRT_PIPE = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 22)
+CONFIG_ARM_ARCH_TYPE = smp
+# environment
+GTK_IM_MODULE = fcitx
+# makefile (from '../../../Makefile.param', line 143)
+EXTDRV := vendor
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 464)
+CONFIG_OT_MCF_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 69)
+CONFIG_OT_RECORDVQE_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 449)
+CONFIG_OT_SVP_MAU = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 434)
+CONFIG_OT_SVP_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 213)
+CONFIG_OT_RC_QVBR_SUPPORT = y
+# makefile (from '../../../Makefile.param', line 18)
+PARAM_DIR = $(shell pwd)/$(shell dirname $(PARAM_FILE))
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 12)
+CONFIG_SS928V100 = y
+# environment
+PWD = /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 15)
+CONFIG_SUBCHIP_SS928V100 = y
+# makefile (from '../../Makefile.param', line 75)
+ 
+INC_FLAGS := -I/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/include -I/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/include -I/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/vendor/es8388 -I/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/vendor/lt8618sx
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 282)
+CONFIG_OT_VO_VIRTDEV_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 226)
+CONFIG_OT_VGS_MCF_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 119)
+CONFIG_OT_ISP_PREGAMMA_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 441)
+CONFIG_OT_SVP_IVE_LBP = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 68)
+CONFIG_OT_TALKVQE_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 459)
+CONFIG_OT_MOTIONFUSION_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 345)
+CONFIG_OT_VPP_VI_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 30)
+CONFIG_OT_FPGA = n
+# environment
+XDG_SEAT = seat0
+# environment
+SSH_AGENT_PID = 1688
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 263)
+CONFIG_OT_VI_CHN_LDC = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 225)
+CONFIG_OT_VGS_SHBD_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 196)
+CONFIG_OT_VENC_VPSSAUTO_SUPPORT = y
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 93)
+CONFIG_OT_DIS_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 133)
+CONFIG_OT_REGION_SUPPORT = y
+# environment
+GTK_MODULES = gail:atk-bridge
+# makefile (from '../../../Makefile.param', line 31)
+PRODUCT = IPC
+# makefile (from '../../../Makefile.param', line 83)
+CROSS = $(CONFIG_OT_CROSS_LIB)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 366)
+CONFIG_EXTDRV = y
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# makefile (from '../../Makefile.param', line 158)
+COMM_INC := -I/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common -I/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../audio/adp
+# environment
+HOME = /home/ginger
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 35)
+CONFIG_LINUX_4_19_y = y
+# makefile (from '../Makefile.param', line 5)
+AUDIO_ADP_DIR := /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../audio/adp
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 185)
+CONFIG_OT_H265E_INTRA_REFRESH_SUPPORT = y
+# makefile (from '../../../Makefile.param', line 304)
+JPEGE := 
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 204)
+CONFIG_OT_VENC_DUALP_SUPPORT = y
+# makefile (from '../../../Makefile.param', line 32)
+MPP_BUILD = n
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CLI = 1
+# makefile (from '../../../Makefile.param', line 51)
+ARCH_DIR = $(CONFIG_OT_ARCH)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 283)
+CONFIG_OT_VO_VGS = y
+# environment
+VSCODE_CODE_CACHE_PATH = /home/ginger/.config/Code/CachedData/d045a5eda657f4d7b676dedbfa7aab8207f8a075
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 242)
+CONFIG_OT_VI_DEV_GENERATE_TIMING = y
+# environment
+ 
+LOGNAME = ginger
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 342)
+CONFIG_OT_VPP_SUPPORT = y
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 17)
+CONFIG_OT_SUBARCH = ss928v100
+# automatic
++F = $(notdir $+)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 266)
+CONFIG_OT_VI_CHN_FOV_CORRECTION = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 448)
+CONFIG_OT_SVP_MD = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 101)
+CONFIG_OT_GDC_FISHEYE_LMF_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 199)
+CONFIG_OT_VENC_VGS_SUPPORT = y
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 262)
+CONFIG_OT_VI_CHN_ROTATION = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 238)
+CONFIG_OT_VI_ALL_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 246)
+CONFIG_OT_VI_PIPE_POST_CROP = y
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+MAKE_VERSION := 4.1
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from '../../../Makefile.param', line 144)
+REL_DIR = $(SDK_PATH)/mpp/out
+# environment
+XDG_VTNR = 2
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 51)
+CONFIG_OT_PLATFORM_V8 = y
+# makefile (from '../../../Makefile.param', line 266)
+VER_Y = 0
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 435)
+CONFIG_OT_SVP_DSP = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 394)
+CONFIG_GFBG_DPU_V3 = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 320)
+CONFIG_OT_VPSS_MOSAIC_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 477)
+CONFIG_OT_GDB = n
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 126)
+CONFIG_OT_ISP_DPC_STATIC_TABLE_SUPPORT = y
+# environment
+LC_TIME = zh_CN.UTF-8
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 116)
+CONFIG_OT_ISP_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 243)
+CONFIG_OT_VI_DEV_GENERATE_DATA = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 72)
+CONFIG_OT_AUDIO_STATIC_REGISTER_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 118)
+CONFIG_OT_ISP_CR_SUPPORT = y
+# environment
+COLORTERM = truecolor
+# default
+MAKE = $(MAKE_COMMAND)
+# makefile (from '../../../Makefile.param', line 265)
+VER_X = 1
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = fcitx
+# makefile (from '../../../Makefile.param', line 59)
+OSTYPE = $(CONFIG_OS_TYPE)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 241)
+CONFIG_OT_VI_DEV_SEND_FRAME = y
+# environment
+SHLVL = 3
+# makefile (from '../../../Makefile.param', line 118)
+OSAL_ROOT = $(SDK_PATH)/osal
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 232)
+CONFIG_OT_VGS_USER_ONLINE_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 253)
+CONFIG_OT_VI_PIPE_FRAME_INTERRUPT_TYPE = y
+# makefile (from '../../../Makefile.param', line 52)
+EXT_DRV = $(CONFIG_OT_ARCH)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 39)
+CONFIG_OT_CROSS = aarch64-mix210-linux-
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../Makefile.linux.param', line 29)
+CC := aarch64-mix210-linux-gcc
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 258)
+ 
+CONFIG_OT_VI_PIPE_BNR = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 167)
+CONFIG_VDEC_IP = VDEC_IP_VDH
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 372)
+CONFIG_OT_LSADC = y
+# makefile (from '../../../Makefile.param', line 190)
+AUDIO_PATH = $(MPP_PATH)/cbb/audio/component/lib/$(OT_ARCH)/$(CONFIG_OT_CROSS)/$(OSTYPE)
+# environment
+XDG_SESSION_ID = 2
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 189)
+CONFIG_OT_H264E_INTRA_REFRESH_SUPPORT = y
+# environment
+USER = ginger
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 269)
+CONFIG_OT_VI_STITCH_GRP = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 128)
+CONFIG_OT_ISP_HNR_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 346)
+CONFIG_OT_VPP_COVEREX_RATIO_SUPPORT = y
+# environment
+LC_MONETARY = zh_CN.UTF-8
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from '../../../Makefile.param', line 50)
+KO_PREFIX = ot
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 281)
+CONFIG_OT_VO_CORNER_RECT_SUPPORT = y
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 120)
+CONFIG_OT_ISP_GCAC_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 324)
+CONFIG_OT_VPSS_BUFFER_REUSE_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 50)
+CONFIG_OT_RLS_MODE = OT_RELEASE
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 208)
+CONFIG_OT_VENC_SCENE0_SUPPORT = y
+# makefile (from '../../../Makefile.param', line 114)
+SDK_PATH = $(shell cd $(PARAM_DIR)/..; pwd)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 38)
+CONFIG_KERNEL_AARCH64_MIX210 = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 284)
+CONFIG_OT_VO_GRAPH = y
+# makefile (from '../../../Makefile.param', line 277)
+LIBS_CFLAGS := -Wall -fsigned-char -mcpu=cortex-a53 -fno-aggressive-loop-optimizations -ldl -ffunction-sections -fdata-sections -O2 -fstack-protector-strong -fPIC -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE
+# makefile (from '../../../Makefile.param', line 22)
+WORK_PATH = /work
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 195)
+CONFIG_OT_VENC_LOWDELAY_SUPPORT = y
+# makefile (from '../../../Makefile.param', line 76)
+OT_GDB = $(CONFIG_OT_GDB)
+# environment
+LC_TELEPHONE = zh_CN.UTF-8
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 313)
+CONFIG_OT_VPSS_3DNR_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 124)
+CONFIG_OT_ISP_SPECAWB_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 181)
+CONFIG_OT_VENC_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 43)
+CONFIG_OT_CROSS_LIB = aarch64-mix210-linux-
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 169)
+CONFIG_OT_JPEGD_PROGRESSIVE = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../Makefile.linux.param', line 30)
+AR := aarch64-mix210-linux-ar
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 275)
+CONFIG_OT_VO_SUPPORT = y
+# default
+MAKE_COMMAND := make
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 237)
+CONFIG_OT_VI_SUPPORT = y
+# makefile (from '../../../Makefile.param', line 60)
+KERNEL_NAME = $(CONFIG_KERNEL_VERSION)
+# environment
+OLDPWD = /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 289)
+ 
+CONFIG_OT_VO_BORDER_BY_COVER = y
+# default
+.VARIABLES := 
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 229)
+CONFIG_OT_VGS_MULTI_CHN_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 191)
+CONFIG_OT_JPEGE_ROI_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 447)
+CONFIG_OT_SVP_IVE_HOG = y
+# automatic
+*F = $(notdir $*)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 209)
+CONFIG_OT_VENC_SCENE1_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 310)
+CONFIG_OT_VPSS_SUPPORT = y
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-1a7d5992-1.72.2-main.sock
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 267)
+CONFIG_OT_VI_CHN_FISHEYE = y
+# makefile (from '../../../Makefile.param', line 73)
+CPU_TYPE = $(CONFIG_CPU_TYPE)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 314)
+CONFIG_OT_VPSS_3DNR_GAMMA_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 102)
+CONFIG_OT_GDC_FISHEYE_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 164)
+CONFIG_OT_JPEGD_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 436)
+CONFIG_OT_SVP_LITEOS = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 257)
+CONFIG_OT_VI_PIPE_IR_ASSIST_NR = y
+# makefile
+MAKEFLAGS = pqrR
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 264)
+CONFIG_OT_VI_CHN_SPREAD = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 385)
+CONFIG_OT_OTP_SUPPORT = y
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 122)
+CONFIG_OT_ISP_EDGEMARK_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 429)
+CONFIG_OT_PHOTO_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 127)
+CONFIG_OT_PQP_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../Makefile.linux.param', line 32)
+REL_INC := /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/include
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 295)
+CONFIG_OT_VO_HDMI = y
+# makefile (from '../../../Makefile.param', line 304)
+DCF= := 
+# makefile (from '../../../Makefile.param', line 27)
+ARCH = arm64
+# environment
+GDK_BACKEND = x11
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 451)
+CONFIG_OT_SVP_NPU_V1R1_COMPILE = y
+# makefile (from '../../../Makefile.param', line 64)
+OT_RLS_MODE = $(CONFIG_OT_RLS_MODE)
+# environment
+LC_PAPER = zh_CN.UTF-8
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 475)
+CONFIG_OT_GDB_NO = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 143)
+CONFIG_OT_SYS_SCALE_COEF_SUPPORT = y
+# makefile (from '../../Makefile.param', line 79)
+ISP_VERSION := ISP_V2
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 106)
+CONFIG_OT_GDC_SPREAD_SUPPORT = y
+ 
+# makefile (from '../../Makefile.param', line 156)
+COMM_OBJ := /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_sys.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_isp.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_vi.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_vo.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_mipi_tx.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_vpss.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/loadbmp.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_vdec.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_audio.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_venc.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_region.o
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 230)
+CONFIG_OT_VGS_GME_SUPPORT = y
+# makefile (from '../../Makefile.param', line 155)
+COMM_SRC := /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_sys.c /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_isp.c /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_vi.c /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_vo.c /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_mipi_tx.c /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_vpss.c /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/loadbmp.c /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_vdec.c /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_audio.c /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_venc.c /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_region.c
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 254)
+CONFIG_OT_VI_PIPE_GET_COMPRESS_PARAM = y
+# environment
+QT_ACCESSIBILITY = 1
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 111)
+CONFIG_OT_HDMI_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 327)
+CONFIG_OT_VPSS_EXT_CHN_SUPPORT = y
+ 
+# makefile (from '../../../Makefile.param', line 82)
+CROSS_COMPILE = $(CONFIG_OT_CROSS)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 332)
+CONFIG_OT_VPSS_2DOF_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 478)
+CONFIG_OT_PROC_SHOW_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 315)
+CONFIG_OT_VPSS_3DNR_BNR_LINKAGE_SUPPORT = y
+# makefile (from '../../../Makefile.param', line 69)
+DBG_FLAG = 0
+# environment
+TEXTDOMAINDIR = /usr/share/locale/
+# environment
+FFMPEG_HOME = /usr/local/ffmpeg
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 261)
+CONFIG_OT_VI_CHN_DIS = y
+# default
+MAKEFILES := 
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 117)
+CONFIG_OT_ISP_AF_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 469)
+CONFIG_OT_SECUREC_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 368)
+CONFIG_OT_USER = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 294)
+CONFIG_OT_VO_MIPI = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 63)
+CONFIG_OT_ACODEC_MAX_GAIN = 56
+# automatic
+<F = $(notdir $<)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 190)
+CONFIG_OT_JPEGE_SUPPORT = y
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 374)
+CONFIG_OT_SYSCFG = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 210)
+CONFIG_OT_VENC_SCENE2_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 66)
+CONFIG_OT_ACODEC_FAST_POWER_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 325)
+CONFIG_OT_VPSS_LOW_DELAY_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 83)
+CONFIG_OT_VB_SUPPLEMENT_MASK_SUPPORT = y
+# makefile (from '../../Makefile.param', line 132)
+ 
+AUDIO_LIBA := /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_voice_engine.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_upvqe.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_dnvqe.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libaac_comm.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libaac_enc.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libaac_dec.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libaac_sbr_enc.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libaac_sbr_dec.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libvqe_res.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libvqe_record.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libvqe_hpf.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libvqe_anr.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libvqe_aec.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libvqe_agc.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libvqe_eq.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libvqe_talkv2.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libvqe_wnr.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libaac_dec.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libaac_enc.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libaac_comm.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libaac_sbr_dec.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libaac_sbr_enc.a
+# environment
+LC_MEASUREMENT = zh_CN.UTF-8
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 446)
+CONFIG_OT_SVP_IVE_KCF = y
+# makefile (from '../../Makefile.param', line 95)
+ACODEC_TYPE = ACODEC_TYPE_INNER
+# makefile (from '../Makefile.param', line 4)
+COMMON_DIR := /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 444)
+CONFIG_OT_SVP_IVE_RESIZE = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 479)
+CONFIG_OT_LOG_TRACE_SUPPORT = y
+# environment
+LC_ALL = C
+# makefile (from '../../../Makefile.param', line 106)
+ASIC_FLAG := 0
+ 
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 370)
+CONFIG_MIPI_RX = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../Makefile.linux.param', line 50)
+KBUILD_EXTRA_SYMBOLS = $(TEMP_PATH)/Module.symvers
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 29)
+CONFIG_VERSION_ASIC = y
+# makefile (from '../../../Makefile.param', line 56)
+LIBC = $(CONFIG_LIBC_TYPE)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 419)
+CONFIG_OT_POS_QUERY_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 265)
+CONFIG_OT_VI_CHN_RGN_LUMA = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../Makefile.linux.param', line 35)
+REL_OBJ := /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/obj
+# makefile (from '../../../Makefile.param', line 37)
+OT_CHIP = $(CONFIG_OT_CHIP_TYPE)
+# environment
+QT4_IM_MODULE = fcitx
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 260)
+CONFIG_OT_VI_CHN_LOW_DELAY = y
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/0955f798_934c_451d_aaee_b0c6ecfe1e2f
+# automatic
+^F = $(notdir $^)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 280)
+CONFIG_OT_VO_COVER_OSD_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 484)
+CONFIG_OT_LOG_TRACE_LEVEL = 7
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 212)
+CONFIG_OT_RC_QPMAP_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 326)
+CONFIG_OT_VPSS_IPC_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 19)
+CONFIG_SMP = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 343)
+CONFIG_OT_VPP_FOV_CORRECTION_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 123)
+CONFIG_OT_ISP_HLC_SUPPORT = y
+# environment
+GNOME_TERMINAL_SERVICE = :1.65
+ 
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 453)
+CONFIG_OT_SVP_DPU_RECT = y
+# default
+SUFFIXES := 
+# makefile (from '../../../Makefile.param', line 117)
+VENDOR_ROOT = $(SDK_PATH)/vendor
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 182)
+CONFIG_OT_H265E_SUPPORT = y
+# makefile (from '../../Makefile.param', line 168)
+MEDIA_MSG_INC := -I/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/media_msg/include -I/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/ot_syslink/ipcmsg/include -I/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/ot_syslink/datafifo/include
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 194)
+CONFIG_OT_JPEGE_USERDATA_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../Makefile.linux.param', line 33)
+REL_LIB := /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 64)
+CONFIG_OT_ACODEC_MIN_GAIN = 0
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 256)
+CONFIG_OT_VI_PIPE_FPN = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 99)
+CONFIG_OT_GDC_SUPPORT = y
+# environment
+WINDOWPATH = 2
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 224)
+CONFIG_OT_VGS_CORNER_RECT_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 302)
+CONFIG_OT_VO_EXPORT_FUNCTION = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 26)
+CONFIG_A55 = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 100)
+CONFIG_OT_GDC_LOWDELAY_SUPPORT = y
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 231)
+CONFIG_OT_VGS_MOSAIC_ONLINE_SUPPORT = y
+# environment
+LC_IDENTIFICATION = zh_CN.UTF-8
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 13)
+CONFIG_OT_CHIP_TYPE = 0x01090100
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 62)
+CONFIG_OT_ACODEC_VERSION = RemixV100
+ 
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 214)
+CONFIG_OT_RC_CVBR_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 40)
+CONFIG_LIBC_TYPE = glibc
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 454)
+CONFIG_OT_SVP_DPU_MATCH = y
+# default
+.RECIPEPREFIX := 
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 298)
+CONFIG_OT_VO_DEV_BYPASS = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 60)
+CONFIG_OT_AUDIO_SUPPORT = y
+# makefile (from '../Makefile.param', line 1)
+PARAM_FILE := ../../../Makefile.param
+# environment
+LC_ADDRESS = zh_CN.UTF-8
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 321)
+CONFIG_OT_VPSS_DELAY_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../smp_linux.mak', line 8)
+ 
+MPI_LIBS := /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_mpi.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/librtsp.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libbin.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/lib_pqcontrol.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_ae.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_isp.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libot_isp.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_awb.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_dehaze.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_extend_stats.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_drc.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_ldci.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_crb.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_bnr.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_calcflicker.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_ir_auto.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_acs.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_acs.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libsns_os08a20.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libsns_os05a10_2l_slave.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libsns_imx347_slave.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libsns_imx485.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libsns_os04a10.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libsns_os08b10.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libsns_gc4653.a  /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libsns_sc850sl.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_ive.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_md.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_mau.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_dpu_rect.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_dpu_match.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_dsp.a /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/svp_npu/libsvp_acl.a -L/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/svp_npu -lprotobuf-c /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/out/lib/libss_hdmi.a -fno-common -mcpu=cortex-a53 -fno-aggressive-loop-optimizations -Wl,-z,relro -Wl,-z,noexecstack -Wl,-z,now,-s -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -ldl -rdynamic
+# makefile (from '../../../Makefile.param', line 53)
+INTER_DRV = $(CONFIG_OT_ARCH)
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 365)
+CONFIG_DRV = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 245)
+CONFIG_OT_VI_PIPE_PRE_CROP = y
+# makefile (from '../../../Makefile.param', line 145)
+SAMPLE_DIR = $(SDK_PATH)/mpp/sample
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 443)
+CONFIG_OT_SVP_IVE_ST_CANDI_CORNER = y
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 259)
+CONFIG_OT_VI_PIPE_HNR = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 163)
+CONFIG_OT_H264D_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 438)
+CONFIG_OT_SVP_IVE_CSC = y
+# environment
+VSCODE_PID = 2962
+# makefile (from '../../Makefile.param', line 136)
+GYRO_DIS = n
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 279)
+CONFIG_OT_VO_LUMA = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../Makefile.linux.param', line 40)
+MPP_CFLAGS := -Wall -fsigned-char -DOT_RELEASE -DVER_X=1 -DVER_Y=0 -DVER_Z=0 -DVER_P=0 -DVER_B=10 -DUSER_BIT_64 -DKERNEL_BIT_64 -Wno-date-time
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 184)
+CONFIG_OT_H265E_USERDATA_SUPPORT = y
+# makefile (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak', line 61)
+CONFIG_OT_ACODEC_SUPPORT = y
+# variable set hash-table stats:
+# Load=463/1024=45%, Rehash=0, Collisions=326/1086=30%
+
+ 
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/media_msg/server: could not be stat'd.
+# /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../common (device 2049, inode 2998645): 12 files, no impossibilities.
+# . (device 2049, inode 2998612): 10 files, no impossibilities.
+# /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/media_msg/client: could not be stat'd.
+# ./sample (device 2049, inode 2998629): 20 files, no impossibilities.
+
+# 42 files, no impossibilities in 5 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../smp_linux.mak:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-27 16:55:21
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+sample/sample_ive_st_and_lk.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:42:03.483640472
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../common/sample_common_mau.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:42:23.947639643
+#  File has been updated.
+#  Successfully updated.
+
+all: sample_ive_main
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+.PHONY: clean all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../Makefile.param:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:40:26.027644418
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+sample/sample_ive_test_memory.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:42:12.787640095
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../cfg.mak:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-14 11:09:50.541276942
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_sys.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:41:06.759642768
+ 
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/loadbmp.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:41:31.119641782
+#  File has been updated.
+#  Successfully updated.
+
+sample_ive_main: /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_sys.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_isp.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_vi.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_vo.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_mipi_tx.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_vpss.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/loadbmp.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_vdec.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_audio.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_venc.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_region.o sample_ive_main.o sample/sample_ive_md.o sample/sample_ive_st_and_lk.o sample/sample_ive_canny.o sample/sample_ive_sobel_with_cached_mem.o sample/sample_ive_gmm2.o sample/sample_ive_test_memory.o sample/sample_ive_persptrans.o sample/sample_ive_od.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../common/sample_common_svp.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../common/sample_common_ive.o /home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../common/sample_common_mau.o
+#  Implicit rule search has not been done.
+#  Last modified 2023-05-08 14:41:20.661379354
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../smp_linux.mak', line 15):
+	$(CC) $(CFLAGS) -lpthread -lm -o $(TARGET_PATH)/$@ $^ -Wl,--start-group $(MPI_LIBS) $(SENSOR_LIBS) $(AUDIO_LIBA)  $(INIPARSER_LIB)  $(REL_LIB)/libsecurec.a -Wl,--end-group
+
+# Not a target:
+sample_ive_main.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:41:58.367640679
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2023-05-08 00:30:13.935239468
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_isp.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:41:10.343642623
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_venc.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:41:52.251640926
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+sample/sample_ive_md.o:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2023-05-08 14:41:18.62137932
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+sample/sample_ive_od.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:42:16.651639938
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../../Makefile.linux.param:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-27 16:55:10
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../common/sample_common_svp.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:42:19.899639807
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../../Makefile.param:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-14 14:05:52.576725374
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_vo.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:41:25.087642026
+#  File has been updated.
+#  Successfully updated.
+
+cleanstream:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../smp_linux.mak', line 23):
+	@rm -f *.h264
+	@rm -f *.h265
+	@rm -f *.jpg
+	@rm -f *.mjp
+	@rm -f *.mp4
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_vdec.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:41:36.267641574
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+sample/sample_ive_sobel_with_cached_mem.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:42:07.591640305
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+sample/sample_ive_canny.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:42:05.315640397
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../common/sample_common_ive.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:42:22.179639715
+#  File has been updated.
+ 
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../smp_linux.mak', line 18):
+	@rm -f $(TARGET_PATH)/$(TARGET)
+	@rm -f $(OBJS)
+	@rm -f $(COMM_OBJ)
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_vi.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:41:21.419642175
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_vpss.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:41:28.607641884
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_audio.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:41:41.647641356
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../Makefile.param:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-06 09:44:09.101473436
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_region.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:41:56.807640742
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+sample/sample_ive_persptrans.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:42:14.675640018
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+sample/sample_ive_gmm2.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:42:10.867640173
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/../../common/sample_comm_mipi_tx.o:
+#  Implicit rule search has been done.
+#  Last modified 2023-04-24 17:41:26.675641962
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=37/1024=4%, Rehash=0, Collisions=16/82=20%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 78 / storage = 4171 B / avg = 53 B
+# current buf: size = 8162 B / used = 4171 B / count = 78 / avg = 53 B
+
+# strcache performance: lookups = 103 / hit rate = 24%
+# hash-table stats:
+# Load=78/8192=1%, Rehash=0, Collisions=8/103=8%
+ 
+# Finished Make data base on Mon May  8 15:38:25 2023
+
+ 

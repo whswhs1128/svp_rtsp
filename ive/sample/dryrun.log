@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/sample'
+make: Leaving directory '/home/ginger/sdk/SS928V100R001C02SPC021/01.software/board/SS928V100_SDK_V2.0.2.1/package/smp/a55_linux/mpp/sample/svp_udp/ive/sample'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

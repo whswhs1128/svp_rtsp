@@ -1,0 +1,18 @@
+export PARAM_FILE := ../../../Makefile.param
+include $(PARAM_FILE)
+
+COMMON_DIR:=$(PWD)/../../common
+AUDIO_ADP_DIR:=$(PWD)/../../audio/adp
+include ../../Makefile.param
+
+MPI_LIBS += $(REL_LIB)/libss_ive.a
+MPI_LIBS += $(REL_LIB)/libss_md.a
+MPI_LIBS += $(REL_LIB)/libss_mau.a
+MPI_LIBS += $(REL_LIB)/libss_dpu_rect.a
+MPI_LIBS += $(REL_LIB)/libss_dpu_match.a
+MPI_LIBS += $(REL_LIB)/libss_dsp.a
+MPI_LIBS += $(REL_LIB)/svp_npu/libsvp_acl.a
+MPI_LIBS += -L$(REL_LIB)/svp_npu -lprotobuf-c
+CFLAGS += -I$(PWD)/../common
+CFLAGS += -fstack-protector-strong
+
