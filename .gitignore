@@ -1,0 +1,13 @@
+sample_ive_main
+../common/*.o
+*.o
+*.a
+rtsp_lib/
+Makefile
+Makefile.param
+rtsp_lib/librtsp.a
+rtsp_lib/rtp_enc.o
+rtsp_lib/rtsp_demo.o
+rtsp_lib/rtsp_msg.o
+rtsp_lib/stream_queue.o
+rtsp_lib/utils.o
