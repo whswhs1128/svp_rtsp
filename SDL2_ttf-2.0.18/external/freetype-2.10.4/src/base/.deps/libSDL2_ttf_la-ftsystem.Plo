@@ -1,0 +1,290 @@
+external/freetype-2.10.4/src/base/libSDL2_ttf_la-ftsystem.lo: \
+ external/freetype-2.10.4/src/base/ftsystem.c \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/stdc-predef.h \
+ external/freetype-2.10.4/include/ft2build.h \
+ external/freetype-2.10.4/include/freetype/config/ftheader.h \
+ external/freetype-2.10.4/include/freetype/config/ftconfig.h \
+ external/freetype-2.10.4/include/freetype/config/ftoption.h \
+ external/freetype-2.10.4/include/freetype/config/ftstdlib.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include/stddef.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include-fixed/limits.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include-fixed/syslimits.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/limits.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/libc-header-start.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/features.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/cdefs.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/wordsize.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/long-double.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/gnu/stubs.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/gnu/stubs-lp64.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/posix1_lim.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/local_lim.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/linux/limits.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/posix2_lim.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/string.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/locale_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__locale_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/strings.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/stdio.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include/stdarg.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/timesize.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/typesizes.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/time64.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__fpos_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__mbstate_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__fpos64_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__FILE.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/FILE.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/struct_FILE.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdio_lim.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/sys_errlist.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdio.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/stdlib.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/waitflags.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/waitstatus.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/floatn.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/floatn-common.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/types.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/clock_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/clockid_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/time_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/timer_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdint-intn.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/endian.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/endian.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/byteswap.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/uintn-identity.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/select.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/select.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/sigset_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__sigset_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/struct_timeval.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/struct_timespec.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/pthreadtypes.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/thread-shared-types.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/pthreadtypes-arch.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/alloca.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdlib-bsearch.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdlib-float.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/setjmp.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/setjmp.h \
+ external/freetype-2.10.4/include/freetype/config/integer-types.h \
+ external/freetype-2.10.4/include/freetype/config/public-macros.h \
+ external/freetype-2.10.4/include/freetype/config/mac-support.h \
+ external/freetype-2.10.4/include/freetype/internal/ftdebug.h \
+ external/freetype-2.10.4/include/freetype/freetype.h \
+ external/freetype-2.10.4/include/freetype/fttypes.h \
+ external/freetype-2.10.4/include/freetype/ftsystem.h \
+ external/freetype-2.10.4/include/freetype/ftimage.h \
+ external/freetype-2.10.4/include/freetype/fterrors.h \
+ external/freetype-2.10.4/include/freetype/ftmoderr.h \
+ external/freetype-2.10.4/include/freetype/fterrdef.h \
+ external/freetype-2.10.4/include/freetype/internal/compiler-macros.h \
+ external/freetype-2.10.4/include/freetype/internal/ftstream.h \
+ external/freetype-2.10.4/include/freetype/internal/ftobjs.h \
+ external/freetype-2.10.4/include/freetype/ftrender.h \
+ external/freetype-2.10.4/include/freetype/ftmodapi.h \
+ external/freetype-2.10.4/include/freetype/ftglyph.h \
+ external/freetype-2.10.4/include/freetype/ftsizes.h \
+ external/freetype-2.10.4/include/freetype/ftlcdfil.h \
+ external/freetype-2.10.4/include/freetype/ftparams.h \
+ external/freetype-2.10.4/include/freetype/internal/ftmemory.h \
+ external/freetype-2.10.4/include/freetype/internal/ftgloadr.h \
+ external/freetype-2.10.4/include/freetype/internal/ftdrv.h \
+ external/freetype-2.10.4/include/freetype/internal/autohint.h \
+ external/freetype-2.10.4/include/freetype/internal/ftserv.h \
+ external/freetype-2.10.4/include/freetype/internal/ftcalc.h \
+ external/freetype-2.10.4/include/freetype/ftincrem.h
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/stdc-predef.h:
+
+external/freetype-2.10.4/include/ft2build.h:
+
+external/freetype-2.10.4/include/freetype/config/ftheader.h:
+
+external/freetype-2.10.4/include/freetype/config/ftconfig.h:
+
+external/freetype-2.10.4/include/freetype/config/ftoption.h:
+
+external/freetype-2.10.4/include/freetype/config/ftstdlib.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include/stddef.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include-fixed/limits.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include-fixed/syslimits.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/limits.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/libc-header-start.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/features.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/cdefs.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/wordsize.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/long-double.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/gnu/stubs.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/gnu/stubs-lp64.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/posix1_lim.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/local_lim.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/linux/limits.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/posix2_lim.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/string.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/locale_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__locale_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/strings.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/stdio.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include/stdarg.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/timesize.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/typesizes.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/time64.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__fpos_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__mbstate_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__fpos64_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__FILE.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/FILE.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/struct_FILE.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdio_lim.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/sys_errlist.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdio.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/stdlib.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/waitflags.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/waitstatus.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/floatn.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/floatn-common.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/types.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/clock_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/clockid_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/time_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/timer_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdint-intn.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/endian.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/endian.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/byteswap.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/uintn-identity.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/select.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/select.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/sigset_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__sigset_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/struct_timeval.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/struct_timespec.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/pthreadtypes.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/thread-shared-types.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/pthreadtypes-arch.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/alloca.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdlib-bsearch.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdlib-float.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/setjmp.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/setjmp.h:
+
+external/freetype-2.10.4/include/freetype/config/integer-types.h:
+
+external/freetype-2.10.4/include/freetype/config/public-macros.h:
+
+external/freetype-2.10.4/include/freetype/config/mac-support.h:
+
+external/freetype-2.10.4/include/freetype/internal/ftdebug.h:
+
+external/freetype-2.10.4/include/freetype/freetype.h:
+
+external/freetype-2.10.4/include/freetype/fttypes.h:
+
+external/freetype-2.10.4/include/freetype/ftsystem.h:
+
+external/freetype-2.10.4/include/freetype/ftimage.h:
+
+external/freetype-2.10.4/include/freetype/fterrors.h:
+
+external/freetype-2.10.4/include/freetype/ftmoderr.h:
+
+external/freetype-2.10.4/include/freetype/fterrdef.h:
+
+external/freetype-2.10.4/include/freetype/internal/compiler-macros.h:
+
+external/freetype-2.10.4/include/freetype/internal/ftstream.h:
+
+external/freetype-2.10.4/include/freetype/internal/ftobjs.h:
+
+external/freetype-2.10.4/include/freetype/ftrender.h:
+
+external/freetype-2.10.4/include/freetype/ftmodapi.h:
+
+external/freetype-2.10.4/include/freetype/ftglyph.h:
+
+external/freetype-2.10.4/include/freetype/ftsizes.h:
+
+external/freetype-2.10.4/include/freetype/ftlcdfil.h:
+
+external/freetype-2.10.4/include/freetype/ftparams.h:
+
+external/freetype-2.10.4/include/freetype/internal/ftmemory.h:
+
+external/freetype-2.10.4/include/freetype/internal/ftgloadr.h:
+
+external/freetype-2.10.4/include/freetype/internal/ftdrv.h:
+
+external/freetype-2.10.4/include/freetype/internal/autohint.h:
+
+external/freetype-2.10.4/include/freetype/internal/ftserv.h:
+
+external/freetype-2.10.4/include/freetype/internal/ftcalc.h:
+
+external/freetype-2.10.4/include/freetype/ftincrem.h:

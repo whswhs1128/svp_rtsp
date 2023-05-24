@@ -1,0 +1,454 @@
+glfont.o: glfont.c \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/stdc-predef.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/stdlib.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/libc-header-start.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/features.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/cdefs.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/wordsize.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/long-double.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/gnu/stubs.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/gnu/stubs-lp64.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include/stddef.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/waitflags.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/waitstatus.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/floatn.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/floatn-common.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/types.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/timesize.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/typesizes.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/time64.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/clock_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/clockid_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/time_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/timer_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdint-intn.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/endian.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/endian.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/byteswap.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/uintn-identity.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/select.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/select.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/sigset_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__sigset_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/struct_timeval.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/struct_timespec.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/pthreadtypes.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/thread-shared-types.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/pthreadtypes-arch.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/alloca.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdlib-bsearch.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdlib-float.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/stdio.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include/stdarg.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__fpos_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__mbstate_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__fpos64_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__FILE.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/FILE.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/struct_FILE.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdio_lim.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/sys_errlist.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdio.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/string.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/locale_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__locale_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/strings.h \
+ SDL.h SDL_main.h SDL_stdinc.h SDL_config.h SDL_platform.h begin_code.h \
+ close_code.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/wchar.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/wchar.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/wint_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/mbstate_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/inttypes.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include/stdint.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/stdint.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdint-uintn.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/ctype.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/math.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/math-vector.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/libm-simd-decl-stubs.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/flt-eval-method.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/fp-logb.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/fp-fast.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/mathcalls-helper-functions.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/mathcalls.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/mathinline.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include/float.h \
+ SDL_assert.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/signal.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/signum.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/signum-generic.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/sig_atomic_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/siginfo_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__sigval_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/siginfo-arch.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/siginfo-consts.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/sigval_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/sigevent_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/sigevent-consts.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/sigaction.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/sigcontext.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/asm/sigcontext.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/linux/types.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/asm/types.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/asm-generic/types.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/asm-generic/int-ll64.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/asm/bitsperlong.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/asm-generic/bitsperlong.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/linux/posix_types.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/linux/stddef.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/asm/posix_types.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/asm-generic/posix_types.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/stack_t.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/ucontext.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/procfs.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/time.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/user.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/procfs.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/procfs-id.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/procfs-prregset.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/procfs-extra.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/sigstack.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/ss_flags.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/struct_sigstack.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/sigthread.h \
+ SDL_atomic.h SDL_audio.h SDL_error.h SDL_endian.h SDL_mutex.h \
+ SDL_thread.h SDL_rwops.h SDL_clipboard.h SDL_cpuinfo.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include/arm_neon.h \
+ /opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include/arm_fp16.h \
+ SDL_events.h SDL_video.h SDL_pixels.h SDL_rect.h SDL_surface.h \
+ SDL_blendmode.h SDL_keyboard.h SDL_keycode.h SDL_scancode.h SDL_mouse.h \
+ SDL_joystick.h SDL_guid.h SDL_gamecontroller.h SDL_sensor.h SDL_quit.h \
+ SDL_gesture.h SDL_touch.h SDL_filesystem.h SDL_haptic.h SDL_hidapi.h \
+ SDL_hints.h SDL_loadso.h SDL_log.h SDL_messagebox.h SDL_metal.h \
+ SDL_power.h SDL_render.h SDL_shape.h SDL_system.h SDL_timer.h \
+ SDL_version.h SDL_locale.h SDL_misc.h SDL_ttf.h
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/stdc-predef.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/stdlib.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/libc-header-start.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/features.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/cdefs.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/wordsize.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/long-double.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/gnu/stubs.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/gnu/stubs-lp64.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include/stddef.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/waitflags.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/waitstatus.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/floatn.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/floatn-common.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/types.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/timesize.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/typesizes.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/time64.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/clock_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/clockid_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/time_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/timer_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdint-intn.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/endian.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/endian.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/byteswap.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/uintn-identity.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/select.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/select.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/sigset_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__sigset_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/struct_timeval.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/struct_timespec.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/pthreadtypes.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/thread-shared-types.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/pthreadtypes-arch.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/alloca.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdlib-bsearch.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdlib-float.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/stdio.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include/stdarg.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__fpos_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__mbstate_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__fpos64_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__FILE.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/FILE.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/struct_FILE.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdio_lim.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/sys_errlist.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdio.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/string.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/locale_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__locale_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/strings.h:
+
+SDL.h:
+
+SDL_main.h:
+
+SDL_stdinc.h:
+
+SDL_config.h:
+
+SDL_platform.h:
+
+begin_code.h:
+
+close_code.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/wchar.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/wchar.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/wint_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/mbstate_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/inttypes.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include/stdint.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/stdint.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/stdint-uintn.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/ctype.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/math.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/math-vector.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/libm-simd-decl-stubs.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/flt-eval-method.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/fp-logb.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/fp-fast.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/mathcalls-helper-functions.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/mathcalls.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/mathinline.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include/float.h:
+
+SDL_assert.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/signal.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/signum.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/signum-generic.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/sig_atomic_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/siginfo_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/__sigval_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/siginfo-arch.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/siginfo-consts.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/sigval_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/sigevent_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/sigevent-consts.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/sigaction.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/sigcontext.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/asm/sigcontext.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/linux/types.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/asm/types.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/asm-generic/types.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/asm-generic/int-ll64.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/asm/bitsperlong.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/asm-generic/bitsperlong.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/linux/posix_types.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/linux/stddef.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/asm/posix_types.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/asm-generic/posix_types.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/stack_t.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/ucontext.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/procfs.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/time.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/sys/user.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/procfs.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/procfs-id.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/procfs-prregset.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/procfs-extra.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/sigstack.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/ss_flags.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/types/struct_sigstack.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/target/usr/include/bits/sigthread.h:
+
+SDL_atomic.h:
+
+SDL_audio.h:
+
+SDL_error.h:
+
+SDL_endian.h:
+
+SDL_mutex.h:
+
+SDL_thread.h:
+
+SDL_rwops.h:
+
+SDL_clipboard.h:
+
+SDL_cpuinfo.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include/arm_neon.h:
+
+/opt/linux/x86-arm/aarch64-mix210-linux/lib/gcc/aarch64-linux-gnu/7.3.0/include/arm_fp16.h:
+
+SDL_events.h:
+
+SDL_video.h:
+
+SDL_pixels.h:
+
+SDL_rect.h:
+
+SDL_surface.h:
+
+SDL_blendmode.h:
+
+SDL_keyboard.h:
+
+SDL_keycode.h:
+
+SDL_scancode.h:
+
+SDL_mouse.h:
+
+SDL_joystick.h:
+
+SDL_guid.h:
+
+SDL_gamecontroller.h:
+
+SDL_sensor.h:
+
+SDL_quit.h:
+
+SDL_gesture.h:
+
+SDL_touch.h:
+
+SDL_filesystem.h:
+
+SDL_haptic.h:
+
+SDL_hidapi.h:
+
+SDL_hints.h:
+
+SDL_loadso.h:
+
+SDL_log.h:
+
+SDL_messagebox.h:
+
+SDL_metal.h:
+
+SDL_power.h:
+
+SDL_render.h:
+
+SDL_shape.h:
+
+SDL_system.h:
+
+SDL_timer.h:
+
+SDL_version.h:
+
+SDL_locale.h:
+
+SDL_misc.h:
+
+SDL_ttf.h:
