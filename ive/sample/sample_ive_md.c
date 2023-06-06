@@ -31,7 +31,7 @@
 #define FONT_PATH "./hisi_osd.ttf"
 
 #define OT_SAMPLE_IVE_MD_IMAGE_NUM 2
-#define OT_SAMPLE_IVE_MD_MILLIC_SEC 1000
+#define OT_SAMPLE_IVE_MD_MILLIC_SEC 200
 #define OT_SAMPLE_IVE_MD_ADD_X_VAL 32768
 #define OT_SAMPLE_IVE_MD_ADD_Y_VAL 32768
 #define OT_SAMPLE_IVE_MD_THREAD_NAME_LEN 16
@@ -373,6 +373,7 @@ static int get_stream_from_one_channl(int s_LivevencChn, rtsp_demo_handle g_rtsp
             if (g_rtsplive)
             {
                 rtsp_sever_tx_video(g_rtsplive, session, pStremData, nSize, stVStream.pack[i].pts);
+                // usleep(50 *1000);
             }
         }
 
@@ -495,14 +496,28 @@ void *bitmap_update(void )
 {
     ot_rgn_handle OverlayHandle = 0;
     td_s32 s32Ret;
+    int z = 0;
     // time_t now;
     // struct tm *ptm;
     // char timestr[OSD_LENGTH] = {0};
     while(1)
     {
         sleep(1);
-        if(p->labelN[0]==0)
+        z++;
+        if(z == 10)
+        {
+            z = 0;
+            
+        ss_mpi_rgn_update_canvas(OVERLAYEX_MIN_HANDLE);
+        s32Ret = ss_mpi_rgn_set_bmp(OVERLAYEX_MIN_HANDLE,&stBitmap);//s32Ret 为RGN_HANDLE OverlayHandle
+        // memset(stBitmap.data, 0, (2 * (bmp_w) * (bmp_h)));
+        }
+
+        if(p->labelN[0]==0 )
+        {
             continue;
+        }
+            
         ss_mpi_rgn_update_canvas(OVERLAYEX_MIN_HANDLE);
         s32Ret = ss_mpi_rgn_set_bmp(OVERLAYEX_MIN_HANDLE,&stBitmap);//s32Ret 为RGN_HANDLE OverlayHandle
         if(s32Ret != TD_SUCCESS)
@@ -535,7 +550,7 @@ void *osd_ttf_task(void)
     }
     while (1)
     {
-        usleep(1000000);
+        // usleep(1000000);
         // time(&now);
         // ptm = localtime(&now);
         // snprintf(timestr, 100, "时间:%d-%02d-%02d %02d:%02d:%02d", ptm->tm_year + 1900, ptm->tm_mon + 1, ptm->tm_mday, ptm->tm_hour, ptm->tm_min, ptm->tm_sec);
@@ -570,15 +585,8 @@ void *osd_ttf_task(void)
             }
             //  printf("===========timestr================%s\n",timestr);
         }
-        // sprintf(timestr,"%s","粤EL2579 未 单    E27    粤PA8黄单");
+        strcat(timestr," ");
         string_to_bmp(timestr);
-        // ss_mpi_rgn_update_canvas(OverlayHandle);
-        // s32Ret = ss_mpi_rgn_set_bmp(OverlayHandle, &stBitmap); // s32Ret 为RGN_HANDLE OverlayHandle
-        // if (s32Ret != TD_SUCCESS)
-        // {
-        //     printf("HI_MPI_RGN_SetBitMap failed with %#x!\n", s32Ret);
-        // }
-        // memset(stBitmap.data, 0, sizeof(ot_bmp));
         memset(timestr, 0, 720);
     }
     return 0;
@@ -871,6 +879,7 @@ static td_void *sample_ivs_md_proc(td_void *args)
         count++;
 #if 1
         // if(strlen(ptr_tx) == 0) {
+
         if (count % 5 == 0)
         {
             user_addr = (unsigned char *)ss_mpi_sys_mmap(frm[0].video_frame.phys_addr[0], size);
@@ -897,15 +906,17 @@ static td_void *sample_ivs_md_proc(td_void *args)
 
         /* Draw rect */
         // ret = sample_common_svp_vgs_f
-        if (region_tmp_old.num != region_tmp.num)
-        {
+        // if (region_tmp_old.num != region_tmp.num)
+        // {
             region_tmp = region_tmp_old;
-        }
+        // }
 
         // if(random_int == 1) {
+        if(region_tmp.num != 0)
+        {
         ret = sample_common_svp_vgs_fill_rect_changecolor(&frm[0], &region_tmp, boxcolor);
         sample_svp_check_failed_err_level_goto(ret, base_free, "sample_svp_vgs_fill_rect fail,Err(%#x)\n", ret); 
-        
+        }
         ret = ss_mpi_venc_send_frame(hld.vo_chn, &frm[0], OT_SAMPLE_IVE_MD_MILLIC_SEC);
         sample_svp_check_failed_err_level_goto(ret, base_free, "ss_mpi_venc_send_frame fail,Error(%#x)\n", ret);
         random_int = 0;
@@ -1006,9 +1017,12 @@ td_void sample_ive_md(td_void)
     rtsp_handle[0].g_rtsplive = create_rtsp_demo(554);
     rtsp_handle[0].session = create_rtsp_session(rtsp_handle[0].g_rtsplive, "/live.264", 0);
     rtsp_handle[0].channel_num = 0;
+    usleep(333 *1000);
     pthread_create(&VencPid1, 0, VENC_GetVencStreamProc, NULL);
     while (1)
-        ;
+    {
+    	usleep(500 *1000);
+    }
     sample_svp_check_exps_return_void(ret == TD_TRUE, SAMPLE_SVP_ERR_LEVEL_ERROR, "md exist!\n");
     g_stop_signal = TD_TRUE;
     pthread_join(g_md_thread, TD_NULL);
