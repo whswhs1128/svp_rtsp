@@ -27,6 +27,7 @@
 #include <time.h>
 #include "sample_comm.h"
 #include <stdatomic.h>
+#include "ot_common_dis.h"
 
 #define FONT_PATH "./hisi_osd.ttf"
 
@@ -51,8 +52,8 @@ typedef struct
 
 typedef struct
 {
-    int arr[61];
-    int labelN[151];
+    int arr[121];
+    int labelN[301];
 } Total_result;
 
 typedef struct
@@ -84,8 +85,8 @@ static int EXIT_MODE_X = 1;
 static int End_Rtsp = 1;
 rtsp_handle_struct rtsp_handle[2];
 atomic_uint random_int;
-char  platename[]=" 京沪津渝冀晋蒙辽吉黑苏浙皖闽赣鲁豫鄂湘粤桂琼川贵云藏陕甘青宁新学警港澳挂使领民航危险品黄白黑绿未单双0123456789ABCDEFGHJKLMNPQRSTUVWXYZ";
-
+// char  platename[]=" 京沪津渝冀晋蒙辽吉黑苏浙皖闽赣鲁豫鄂湘粤桂琼川贵云藏陕甘青宁新学警港澳挂使领民航危险品黄白黑绿未单双0123456789ABCDEFGHJKLMNPQRSTUVWXYZ";
+char  platename[]=" 京沪津渝冀晋蒙辽吉黑苏浙皖闽赣鲁豫鄂湘粤桂琼川贵云藏陕甘青宁新学警港澳挂使领民航危险品黑蓝未绿白黄单双0123456789ABCDEFGHJKLMNPQRSTUVWXYZ";
 static td_void sample_ivs_md_uninit(ot_sample_ivs_md_info *md_info_ptr)
 {
     td_s32 i;
@@ -442,13 +443,13 @@ int string_to_bmp(char *pu8Str)
         SDL_Quit();
     }
 
-    font = TTF_OpenFont(FONT_PATH, 60); // change size
+    font = TTF_OpenFont(FONT_PATH, 40); // change size
     if (font == NULL)
     {
         fprintf(stderr, "Couldn't load %d pt font from %s: %s\n", 18, "ptsize", SDL_GetError());
     }
 
-    SDL_Color forecol = {0xff, 0xff, 0x00, 0xff};
+    SDL_Color forecol = {0xff, 0x00, 0x00, 0xff};
     text = TTF_RenderUTF8_Solid(font, pu8Str, forecol);
 
     fmt = (SDL_PixelFormat *)malloc(sizeof(SDL_PixelFormat));
@@ -464,19 +465,32 @@ int string_to_bmp(char *pu8Str)
     // {
     //     printf("stBitmap.data faided\r\n");
     // }
-    bmp_w = temp->w;
-    bmp_h = temp->h;
-    memset(stBitmap.data, 0, (2 * (temp->w) * (temp->h)));
-    memcpy(stBitmap.data, temp->pixels, (2 * (temp->w) * (temp->h)));
+    // 奇数会导致内容变成斜体
+    if(temp->w%2 != 0)
+	    bmp_w = temp->w + 1;
+    else
+	    bmp_w = temp->w;
+    if(temp->h % 2 != 0)
+	    bmp_h = temp->h+1;
+    else
+	    bmp_h = temp->h;
+   // bmp_w = temp->w;
+   // bmp_h = temp->h;
+   // memset(stBitmap.data, 0, (2 * (temp->w) * (temp->h)));
+   // memcpy(stBitmap.data, temp->pixels, (2 * (temp->w) * (temp->h)));
 
-    stBitmap.width = temp->w;
-    stBitmap.height = temp->h;
+   // stBitmap.width = temp->w;
+   // stBitmap.height = temp->h;
+      memset(stBitmap.data, 0, (2 * bmp_w * bmp_h));
+      memcpy(stBitmap.data, temp->pixels, (2 * bmp_w * bmp_h));
+      stBitmap.width = bmp_w;
+      stBitmap.height = bmp_h;
 
-    char savename[20] = {0};
+    //char savename[20] = {0};
 
-    snprintf(savename, 20, "./osd/now_time.bmp");
+    //snprintf(savename, 20, "./osd/now_time.bmp");
     // printf("savename = %s\n",savename);
-    SDL_SaveBMP(temp, savename);
+    //SDL_SaveBMP(temp, savename);
     free(fmt);
     SDL_FreeSurface(text);
     SDL_FreeSurface(temp);
@@ -526,7 +540,8 @@ void *bitmap_update(void )
             return -1;
         }
        
-       memset(stBitmap.data, 0, (2 * (bmp_w) * (bmp_h)));
+       //memset(stBitmap.data, 0, (2 * (bmp_w) * (bmp_h)));
+       memset(stBitmap.data, 0, (2 * 3840 * 48));
        
        
     }
@@ -543,7 +558,7 @@ void *osd_ttf_task(void)
     char timestr[720] = {0};
     int i,j;
     char b[3];
-    stBitmap.data = malloc(2 * 3840 * 66);
+    stBitmap.data = malloc(2 * 3840 * 48);
     if (stBitmap.data == NULL)
     {
         printf("stBitmap.data faided\r\n");
@@ -562,6 +577,7 @@ void *osd_ttf_task(void)
         if(p->labelN[0]==0)
         {
             timestr[0] = ' ';
+            // printf("=====no license=======\n");
         }
         else
         {
@@ -569,23 +585,24 @@ void *osd_ttf_task(void)
             {
                 for(j=1;j<=15;j++)
                 {
-                    if(p->labelN[(i*15)+j] < 151 && p->labelN[(i*15)+j] != 0)
+                    if(p->labelN[(i*15)+j] < 154 && p->labelN[(i*15)+j] != 0)
                     {
                         b[0] = platename[p->labelN[(i*15)+j]];
                         b[1] = platename[p->labelN[(i*15)+j]+1];
                         b[2] = platename[p->labelN[(i*15)+j]+2];
                     }
-                    else
+                    else if(p->labelN[(i*15)+j] != 0)
                     {
                         b[0] = platename[p->labelN[(i*15)+j]];
                     }
                     strcat(timestr,b);
                     memset(b,0,3);
                 }    
+		strcat(timestr,"  ");
             }
-            //  printf("===========timestr================%s\n",timestr);
+            // printf("===========timestr================%s\n",timestr);
         }
-        strcat(timestr," ");
+//        strcat(timestr," ");
         string_to_bmp(timestr);
         memset(timestr, 0, 720);
     }
@@ -628,8 +645,8 @@ td_s32 RGN_AddOsdToVenc(void)
         stBitmap.height += 1;
     }
     printf("stBitmap.width is %d ,stBitmap.height is %d\n", stBitmap.width, stBitmap.height);
-    stRgnAttr.attr.overlay.size.width = 3840;   // 240;        /**区域宽**/
-    stRgnAttr.attr.overlay.size.height = 66; // 192;        /**区域高**/
+    stRgnAttr.attr.overlay.size.width = 1920;   // 240;        /**区域宽**/
+    stRgnAttr.attr.overlay.size.height = 48; // 192;        /**区域高**/
     stRgnAttr.attr.overlay.bg_color = 0xffff;         // 0x00007c00; /**区域背景颜色**/
 
     for (i = OVERLAYEX_MIN_HANDLE; i < OVERLAYEX_MIN_HANDLE + handle_num; i++) {
@@ -654,7 +671,7 @@ td_s32 RGN_AddOsdToVenc(void)
     // stChnAttr.attr.overlay_chn.point.x = 640; // 240;
     // stChnAttr.attr.overlay_chn.point.y = 320; // 192;
     stChnAttr.attr.overlay_chn.point.x = 0; // 240;
-    stChnAttr.attr.overlay_chn.point.y = 320; // 192;
+    stChnAttr.attr.overlay_chn.point.y = 60; // 192;
     stChnAttr.attr.overlay_chn.bg_alpha = 0;
     stChnAttr.attr.overlay_chn.fg_alpha = 128;
     stChnAttr.attr.overlay_chn.layer = OverlayHandle;
@@ -743,7 +760,7 @@ void *udp_recv_thread()
     //	printf("ptr size if %d\n",sizeof(ptr_recv));
     struct sockaddr_in caddr;
     socklen_t clen = sizeof(caddr);
-    char ptr_recv[512] = {0};
+    char ptr_recv[2048] = {0};
     int recv_num = 0;
     int i, j;
     
@@ -752,6 +769,7 @@ void *udp_recv_thread()
         //  socklen_t len = sizeof(serverAddr);
         // memset(ptr_recv,0,256);
         //		printf("recv begin\n");
+	usleep(50 * 1000);
         recv_num = recvfrom(sockfd, ptr_recv, sizeof(ptr_recv), 0, (struct sockaddr *)&caddr, &clen);
         //	recv(sockfd,ptr_recv,256,0);
         	
@@ -764,7 +782,7 @@ void *udp_recv_thread()
         // printf("===========================================\n");
         // printf("====arr 0 = %d\n", p->arr[0]);
         // printf("===========================================\n");
-        region_tmp_old.num = p->arr[0] > 10 ? 10 : p->arr[0];
+        region_tmp_old.num = p->arr[0] > 8 ? 8 : p->arr[0];
         
         if (region_tmp_old.num != 0)
         {
@@ -849,9 +867,18 @@ static td_void *sample_ivs_md_proc(td_void *args)
     // shmid_rx = shmget(111, 256, IPC_CREAT|0664);
     // ptr_rx = shmat(shmid_rx, NULL, 0);
 
+    struct timeval tv;
+    struct timezone tz;
+    struct tm *t;
+
     while (g_stop_signal == TD_FALSE)
     {
         ret = ss_mpi_vpss_get_chn_frame(hld.vpss_grp, vpss_chn[1], &frm[1], OT_SAMPLE_IVE_MD_MILLIC_SEC);
+//	printf("==============get frame\n");
+//	gettimeofday(&tv, &tz);
+//	t = localtime(&tv.tv_sec);
+//	printf("%d-%d-%d %d:%d:%d.%ld\n", 1900+t->tm_year, 1+t->tm_mon, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, tv.tv_usec);
+
         sample_svp_check_exps_continue(ret != TD_SUCCESS, SAMPLE_SVP_ERR_LEVEL_ERROR,
                                        "Err(%#x),vpss_get_chn_frame failed, vpss_grp(%d), vpss_chn(%d)!\n", ret, hld.vpss_grp, vpss_chn[1]);
 
@@ -915,11 +942,16 @@ static td_void *sample_ivs_md_proc(td_void *args)
         if(region_tmp.num != 0)
         {
         ret = sample_common_svp_vgs_fill_rect_changecolor(&frm[0], &region_tmp, boxcolor);
-        sample_svp_check_failed_err_level_goto(ret, base_free, "sample_svp_vgs_fill_rect fail,Err(%#x)\n", ret); 
+        //sample_svp_check_failed_err_level_goto(ret, base_free, "sample_svp_vgs_fill_rect fail,Err(%#x)\n", ret); 
         }
         ret = ss_mpi_venc_send_frame(hld.vo_chn, &frm[0], OT_SAMPLE_IVE_MD_MILLIC_SEC);
+//	printf("=================send frame\n");
+//	gettimeofday(&tv, &tz);
+//    t = localtime(&tv.tv_sec);
+//    printf("%d-%d-%d %d:%d:%d.%ld\n", 1900+t->tm_year, 1+t->tm_mon, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, tv.tv_usec);
+
         sample_svp_check_failed_err_level_goto(ret, base_free, "ss_mpi_venc_send_frame fail,Error(%#x)\n", ret);
-        random_int = 0;
+        //random_int = 0;
         // }
         // usleep(500);
         // free(stBitmap.data);
@@ -990,6 +1022,17 @@ td_void sample_ive_md(td_void)
      * step 1: start vi vpss venc vo
      */
     ret = sample_common_svp_start_vi_vpss_venc_vo(&g_vi_config, &g_md_switch, &pic_type);
+    ot_dis_cfg dis_cfg;
+    ss_mpi_vi_get_chn_dis_cfg(0, 0, &dis_cfg);
+    dis_cfg.motion_level = 1;
+    dis_cfg.mode = 1;
+
+    ss_mpi_vi_set_chn_dis_cfg(0, 0, &dis_cfg);
+    ot_dis_attr dis_attr;
+    ss_mpi_vi_get_chn_dis_attr(0, 0, &dis_attr);
+    dis_attr.enable = TD_TRUE;
+    dis_attr.gdc_bypass = TD_FALSE;
+    ss_mpi_vi_set_chn_dis_attr(0, 0, &dis_attr);
     sample_svp_check_exps_goto(ret != TD_SUCCESS, end_md_0, SAMPLE_SVP_ERR_LEVEL_ERROR,
                                "Error(%#x),sample_common_svp_start_vi_vpss_venc_vo failed!\n", ret);
 
@@ -1017,7 +1060,7 @@ td_void sample_ive_md(td_void)
     rtsp_handle[0].g_rtsplive = create_rtsp_demo(554);
     rtsp_handle[0].session = create_rtsp_session(rtsp_handle[0].g_rtsplive, "/live.264", 0);
     rtsp_handle[0].channel_num = 0;
-    usleep(333 *1000);
+    // usleep(333 *1000);
     pthread_create(&VencPid1, 0, VENC_GetVencStreamProc, NULL);
     while (1)
     {
