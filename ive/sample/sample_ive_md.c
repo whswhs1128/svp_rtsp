@@ -474,6 +474,7 @@ int string_to_bmp(char *pu8Str)
 	    bmp_h = temp->h+1;
     else
 	    bmp_h = temp->h;
+
    // bmp_w = temp->w;
    // bmp_h = temp->h;
    // memset(stBitmap.data, 0, (2 * (temp->w) * (temp->h)));
@@ -482,7 +483,7 @@ int string_to_bmp(char *pu8Str)
    // stBitmap.width = temp->w;
    // stBitmap.height = temp->h;
       memset(stBitmap.data, 0, (2 * bmp_w * bmp_h));
-      memcpy(stBitmap.data, temp->pixels, (2 * bmp_w * bmp_h));
+      memcpy(stBitmap.data, temp->pixels, (2 * temp->w * temp->h));
       stBitmap.width = bmp_w;
       stBitmap.height = bmp_h;
 
@@ -491,6 +492,7 @@ int string_to_bmp(char *pu8Str)
     //snprintf(savename, 20, "./osd/now_time.bmp");
     // printf("savename = %s\n",savename);
     //SDL_SaveBMP(temp, savename);
+   // printf("fmt addr is %p, text addr is %p, temp addr is %p, font addr is %p\n", fmt, text, temp, font);
     free(fmt);
     SDL_FreeSurface(text);
     SDL_FreeSurface(temp);
@@ -541,7 +543,7 @@ void *bitmap_update(void )
         }
        
        //memset(stBitmap.data, 0, (2 * (bmp_w) * (bmp_h)));
-       memset(stBitmap.data, 0, (2 * 3840 * 48));
+       memset(stBitmap.data, 0, (2 * 3840 * 56));
        
        
     }
@@ -558,14 +560,14 @@ void *osd_ttf_task(void)
     char timestr[720] = {0};
     int i,j;
     char b[3];
-    stBitmap.data = malloc(2 * 3840 * 48);
+    stBitmap.data = malloc(2 * 3840 * 56);
     if (stBitmap.data == NULL)
     {
         printf("stBitmap.data faided\r\n");
     }
     while (1)
     {
-        // usleep(1000000);
+         usleep(100000);
         // time(&now);
         // ptm = localtime(&now);
         // snprintf(timestr, 100, "时间:%d-%02d-%02d %02d:%02d:%02d", ptm->tm_year + 1900, ptm->tm_mon + 1, ptm->tm_mday, ptm->tm_hour, ptm->tm_min, ptm->tm_sec);
@@ -574,13 +576,15 @@ void *osd_ttf_task(void)
         // {
         //     ;
         // }
-        if(p->labelN[0]==0)
+        if(p->labelN[0] == 0)
         {
+		continue;
             timestr[0] = ' ';
             // printf("=====no license=======\n");
         }
         else
         {
+		//printf("num is %d\n", p->labelN[0]);
             for(i = 0;i < p->labelN[0];i++)
             {
                 for(j=1;j<=15;j++)
@@ -590,17 +594,21 @@ void *osd_ttf_task(void)
                         b[0] = platename[p->labelN[(i*15)+j]];
                         b[1] = platename[p->labelN[(i*15)+j]+1];
                         b[2] = platename[p->labelN[(i*15)+j]+2];
+			strcat(timestr,b);
                     }
-                    else if(p->labelN[(i*15)+j] != 0)
+                    else if(p->labelN[(i*15)+j] > 153)
                     {
+			//b[0] = 'c';
+			//strcat(timestr,b);
                         b[0] = platename[p->labelN[(i*15)+j]];
+			strcat(timestr,b);
+		      //sprintf(timestr,"%s%c",timestr,platename[p->labelN[(i*15)+j]]);
                     }
-                    strcat(timestr,b);
+                    //strcat(timestr,b);
                     memset(b,0,3);
                 }    
-		strcat(timestr,"  ");
+		strcat(timestr,"   ");
             }
-            // printf("===========timestr================%s\n",timestr);
         }
 //        strcat(timestr," ");
         string_to_bmp(timestr);
@@ -635,6 +643,9 @@ td_s32 RGN_AddOsdToVenc(void)
     stRgnAttr.attr.overlay.canvas_num = 2;
     stRgnAttr.type = OT_RGN_OVERLAYEX;                                                /**区域类型:叠加**/
     stRgnAttr.attr.overlay.pixel_format = OT_PIXEL_FORMAT_ARGB_1555; /**像素格式**/ // PIXEL_FORMAT_BGR_565 PIXEL_FORMAT_ARGB_1555
+    
+    stBitmap.width = 2;
+    stBitmap.height = 2;
     if (stBitmap.width % 2 != 0)
     {
         stBitmap.width += 1;
@@ -646,7 +657,7 @@ td_s32 RGN_AddOsdToVenc(void)
     }
     printf("stBitmap.width is %d ,stBitmap.height is %d\n", stBitmap.width, stBitmap.height);
     stRgnAttr.attr.overlay.size.width = 1920;   // 240;        /**区域宽**/
-    stRgnAttr.attr.overlay.size.height = 48; // 192;        /**区域高**/
+    stRgnAttr.attr.overlay.size.height = 56; // 192;        /**区域高**/
     stRgnAttr.attr.overlay.bg_color = 0xffff;         // 0x00007c00; /**区域背景颜色**/
 
     for (i = OVERLAYEX_MIN_HANDLE; i < OVERLAYEX_MIN_HANDLE + handle_num; i++) {
@@ -769,7 +780,7 @@ void *udp_recv_thread()
         //  socklen_t len = sizeof(serverAddr);
         // memset(ptr_recv,0,256);
         //		printf("recv begin\n");
-	usleep(50 * 1000);
+//	usleep(50 * 1000);
         recv_num = recvfrom(sockfd, ptr_recv, sizeof(ptr_recv), 0, (struct sockaddr *)&caddr, &clen);
         //	recv(sockfd,ptr_recv,256,0);
         	
@@ -786,7 +797,7 @@ void *udp_recv_thread()
         
         if (region_tmp_old.num != 0)
         {
-            //	printf("test num is %d\n",region_tmp.num);
+            	//printf("test num is %d\n",region_tmp.num);
             for (i = 0; i < region_tmp_old.num; i++)
             {
                 //	printf("p[6*i+6] = %d\n",p[6*i+6]);
