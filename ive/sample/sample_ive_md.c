@@ -50,9 +50,15 @@ typedef struct
     ot_sample_svp_rect_info region;
 } ot_sample_ivs_md_info;
 
+//typedef struct
+//{
+//    int arr[121];
+//    int labelN[301];
+//} Total_result;
+
 typedef struct
 {
-    int arr[121];
+    int arr[241];
     int labelN[301];
 } Total_result;
 
@@ -86,6 +92,7 @@ static int End_Rtsp = 1;
 rtsp_handle_struct rtsp_handle[2];
 atomic_uint random_int;
 // char  platename[]=" 京沪津渝冀晋蒙辽吉黑苏浙皖闽赣鲁豫鄂湘粤桂琼川贵云藏陕甘青宁新学警港澳挂使领民航危险品黄白黑绿未单双0123456789ABCDEFGHJKLMNPQRSTUVWXYZ";
+//char  platename[]=" 京沪津渝冀晋蒙辽吉黑苏浙皖闽赣鲁豫鄂湘粤桂琼川贵云藏陕甘青宁新学警港澳挂使领民航危险品黑蓝未绿白黄单双0123456789ABCDEFGHJKLMNPQRSTUVWXYZ";
 char  platename[]=" 京沪津渝冀晋蒙辽吉黑苏浙皖闽赣鲁豫鄂湘粤桂琼川贵云藏陕甘青宁新学警港澳挂使领民航危险品黑蓝未绿白黄单双0123456789ABCDEFGHJKLMNPQRSTUVWXYZ";
 static td_void sample_ivs_md_uninit(ot_sample_ivs_md_info *md_info_ptr)
 {
@@ -771,7 +778,7 @@ void *udp_recv_thread()
     //	printf("ptr size if %d\n",sizeof(ptr_recv));
     struct sockaddr_in caddr;
     socklen_t clen = sizeof(caddr);
-    char ptr_recv[2048] = {0};
+    char ptr_recv[2480] = {0};
     int recv_num = 0;
     int i, j;
     
