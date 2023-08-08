@@ -1,5 +1,5 @@
 sample_ive_main
-../common/*.o
+common/*.o
 *.o
 *.a
 rtsp_lib/
